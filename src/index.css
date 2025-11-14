@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Inter Variable', Inter, system-ui, sans-serif;
+  color: #f7f8fa;
+  background-color: #060b16;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background-color: #060b16;
+}
+
+#root {
+  isolation: isolate;
+}
+
+@layer base {
+  * {
+    @apply border-ink-800;
+  }
+
+  body {
+    @apply bg-ink-950 text-ink-50 font-sans;
+  }
+}

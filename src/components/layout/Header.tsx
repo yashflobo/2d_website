@@ -1,0 +1,73 @@
+import { useState } from 'react'
+import { navLinks, heroContent } from '../../data/content'
+
+const Header = () => {
+  const [open, setOpen] = useState(false)
+  const toggle = () => setOpen((prev) => !prev)
+
+  return (
+    <header className="sticky top-0 z-40 backdrop-blur border-b border-white/10 bg-ink-950/80">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+        <a href="#hero" className="flex items-center gap-3">
+          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-aurora text-ink-950 font-bold">
+            CA
+          </div>
+          <div>
+            <p className="font-display text-lg text-white">CodexAR</p>
+            <p className="text-xs uppercase tracking-[0.3em] text-aurora-200">{heroContent.tag}</p>
+          </div>
+        </a>
+        <nav className="hidden items-center gap-8 text-sm text-ink-200 md:flex">
+          {navLinks.map((link) => (
+            <a key={link.href} href={link.href} className="transition hover:text-white">
+              {link.label}
+            </a>
+          ))}
+        </nav>
+        <div className="hidden items-center gap-3 md:flex">
+          <a
+            href={heroContent.secondaryCta.href}
+            className="rounded-full border border-white/20 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/10"
+          >
+            {heroContent.secondaryCta.label}
+          </a>
+          <a
+            href={heroContent.primaryCta.href}
+            className="rounded-full bg-aurora-500 px-4 py-2 text-sm font-semibold text-ink-950 shadow-glow-sm transition hover:bg-aurora-400"
+          >
+            {heroContent.primaryCta.label}
+          </a>
+        </div>
+        <button className="md:hidden text-white" onClick={toggle} aria-label="Toggle navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="h-6 w-6 stroke-current">
+            {open ? (
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M6 18L18 6M6 6l12 12" />
+            ) : (
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 6h16M4 12h16M4 18h16" />
+            )}
+          </svg>
+        </button>
+      </div>
+      {open && (
+        <div className="border-t border-white/10 bg-ink-900/95 px-6 pb-6 pt-2 md:hidden">
+          <nav className="flex flex-col gap-3 text-sm text-ink-100">
+            {navLinks.map((link) => (
+              <a key={link.href} href={link.href} className="rounded-lg px-3 py-2 transition hover:bg-white/5">
+                {link.label}
+              </a>
+            ))}
+            <a
+              href={heroContent.primaryCta.href}
+              className="rounded-full bg-aurora-500 px-4 py-2 text-center font-semibold text-ink-950"
+            >
+              {heroContent.primaryCta.label}
+            </a>
+          </nav>
+        </div>
+      )}
+    </header>
+  )
+}
+
+export default Header
+
