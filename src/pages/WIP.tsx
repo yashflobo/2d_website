@@ -10,11 +10,11 @@ const WIPPage = () => (
         </p>
         <h1 className="text-3xl font-semibold">ARious is almost here</h1>
         <p className="text-ink-200 text-base">
-          We&apos;re crafting an immersive learning experience for teachers. Check back soon to see
-          the full story.
+          We&apos;re crafting an immersive learning experience for students and an AI Co-pilot for
+          teachers to reduce their burden.
         </p>
       </div>
-      <p className="text-xs text-ink-400">Need early access? Reach out at hello@codexar.ai</p>
+      <p className="text-xs text-ink-400">Need early access? Reach out at hello@codexar.com</p>
     </div>
   </div>
 )
