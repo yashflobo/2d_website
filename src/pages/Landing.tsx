@@ -3,9 +3,6 @@ import Footer from '../components/layout/Footer'
 import HeroSection from '../components/sections/HeroSection'
 import LearningCrisisSection from '../components/sections/LearningCrisisSection'
 import SolutionSection from '../components/sections/SolutionSection'
-import HowItWorksSection from '../components/sections/HowItWorksSection'
-import ParentsSection from '../components/sections/ParentsSection'
-import SchoolsSection from '../components/sections/SchoolsSection'
 import ResearchSection from '../components/sections/ResearchSection'
 import SocialProofSection from '../components/sections/SocialProofSection'
 import WaitlistSection from '../components/sections/WaitlistSection'
@@ -18,13 +15,10 @@ const LandingPage = () => (
       <HeroSection />
       <LearningCrisisSection />
       <SolutionSection />
-      <HowItWorksSection />
-      <ParentsSection />
-      <SchoolsSection />
       <ResearchSection />
       <SocialProofSection />
-      <FAQSection />
       <WaitlistSection />
+      <FAQSection />
     </main>
     <Footer />
   </div>
