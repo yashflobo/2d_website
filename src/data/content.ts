@@ -171,7 +171,7 @@ export const faqs = {
   general: [
     {
       question: 'How do I get it?',
-      answer: 'Add your email to the waitlist. We’ll send the teaser link plus simple steps to unlock the preview on December 16.',
+      answer: "Add your email to the waitlist. We'll send the teaser link plus simple steps to unlock the preview on December 16.",
     },
     {
       question: 'Is it safe for my kids?',
@@ -184,7 +184,7 @@ export const faqs = {
     },
     {
       question: 'What ages is it for?',
-      answer: 'The teaser targets curious kids ages 7–13, but the full platform spans K-12. We’ll ask about grade level when you join.',
+      answer: "The teaser targets curious kids ages 7–13, but the full platform spans K-12. We'll ask about grade level when you join.",
     },
     {
       question: 'Are you certified?',
