@@ -7,7 +7,7 @@ const LearningCrisisSection = () => (
     id="crisis"
     eyebrow="The learning crisis"
     headline={crisisSection.title}
-    description="We listened to parents, teachers, and administrators across the CodexAR community."
+    description="We listened to parents, teachers, and administrators across the ARious community."
   >
     <StaggerContainer className="grid gap-6 md:grid-cols-3">
       {crisisSection.cards.map((card) => (

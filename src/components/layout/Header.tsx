@@ -13,7 +13,7 @@ const Header = () => {
             CA
           </div>
           <div>
-            <p className="font-display text-lg text-white">CodexAR</p>
+            <p className="font-display text-lg text-white">ARious</p>
             <p className="text-xs uppercase tracking-[0.3em] text-aurora-200">{heroContent.tag}</p>
           </div>
         </a>

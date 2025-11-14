@@ -39,7 +39,7 @@ const SchoolsSection = () => (
               <tr>
                 <th className="px-4 py-3">Dimension</th>
                 <th className="px-4 py-3">Traditional</th>
-                <th className="px-4 py-3">CodexAR</th>
+                <th className="px-4 py-3">ARious</th>
               </tr>
             </thead>
             <tbody>

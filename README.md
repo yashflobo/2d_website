@@ -1,6 +1,6 @@
-# CodexAR Landing Page
+# ARious Landing Page
 
-Immersive marketing site for the CodexAR December 2025 launch. Built with **Vite + React + TypeScript**, styled with **Tailwind CSS**, and animated using **Framer Motion**. Content and sitemap were derived from the strategy + wireframe PDFs in this repo.
+Immersive marketing site for the ARious December 2025 launch. Built with **Vite + React + TypeScript**, styled with **Tailwind CSS**, and animated using **Framer Motion**. Content and sitemap were derived from the strategy + wireframe PDFs in this repo.
 
 ## Tech stack
 

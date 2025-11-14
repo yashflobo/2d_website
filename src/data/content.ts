@@ -1,5 +1,5 @@
 export const navLinks = [
-  { label: 'Why CodexAR', href: '#solution' },
+  { label: 'Why ARious', href: '#solution' },
   { label: 'How It Works', href: '#how-it-works' },
   { label: 'For Parents', href: '#parents' },
   { label: 'For Schools', href: '#schools' },
@@ -66,7 +66,7 @@ export const solutionSection = {
       label: 'Augmented Reality',
       title: 'See the invisible, understand the impossible',
       description:
-        'Point any device at a CodexAR object and watch abstract concepts materialize in 3D space. Rotate molecules, visualize force vectors, manipulate geometry.',
+        'Point any device at an ARious object and watch abstract concepts materialize in 3D space. Rotate molecules, visualize force vectors, manipulate geometry.',
       footnote: 'Active, spatial problem-solving replaces passive screen time.',
     },
     {
@@ -109,7 +109,7 @@ export const parentSection = {
   pains: [
     {
       title: 'Homework battles',
-      body: '94% of parents say their child asks to keep learning after the first CodexAR session.',
+      body: '94% of parents say their child asks to keep learning after the first ARious session.',
     },
     {
       title: 'Screen time concerns',
@@ -133,7 +133,7 @@ export const parentSection = {
   testimonials: [
     {
       quote:
-        'My 7-year-old struggled with fractions for months. Two weeks with CodexAR and she was teaching me using the physical models.',
+        'My 7-year-old struggled with fractions for months. Two weeks with ARious and she was teaching me using the physical models.',
       author: 'Sarah M., mother of two (Boston)',
     },
     {
@@ -195,7 +195,7 @@ export const schoolSection = {
   testimonials: [
     {
       quote:
-        'We piloted CodexAR in eight schools and saw immediate results. Students asked deeper questions and made cross-concept connections.',
+        'We piloted ARious in eight schools and saw immediate results. Students asked deeper questions and made cross-concept connections.',
       author: 'Dr. Jennifer Williams, Curriculum Director',
     },
   ],
@@ -204,7 +204,7 @@ export const schoolSection = {
   ctas: [
     { label: 'Schedule implementation consultation', href: '#schools-form' },
     { label: 'Request pilot details', href: '#schools-form' },
-    { label: 'Download curriculum alignment guide', href: '/docs/codexar-curriculum.pdf' },
+    { label: 'Download curriculum alignment guide', href: '/docs/arious-curriculum.pdf' },
   ],
   faq: [
     'Does it integrate with our LMS/SIS?',
@@ -220,7 +220,7 @@ export const researchSection = {
   mission: 'On a mission to fuel every student’s curiosity and empower teachers with the tools to make it happen.',
   bio: {
     name: 'Dr. Sudhakar Agarkar',
-    title: 'Chief Knowledge Officer, CodexAR • Professor Emeritus, TIFR',
+    title: 'Chief Knowledge Officer, ARious • Professor Emeritus, TIFR',
     summary:
       '40+ years advancing constructivist STEM learning through the Remedial Instructional Strategy (RIS), proven with disadvantaged learners across India.',
     credentials: [
@@ -254,7 +254,7 @@ export const socialProofSection = {
     {
       role: 'Principal',
       quote:
-        'We evaluated 14 STEM platforms. CodexAR was the only one balancing research backing, standards alignment, and true engagement.',
+        'We evaluated 14 STEM platforms. ARious was the only one balancing research backing, standards alignment, and true engagement.',
     },
     {
       role: 'Parent',
@@ -310,7 +310,7 @@ export const waitlistSection = {
 
 export const faqs = {
   general: [
-    { question: 'When does CodexAR launch?', answer: 'December 2025 with 30-day early waitlist access.' },
+    { question: 'When does ARious launch?', answer: 'December 2025 with 30-day early waitlist access.' },
     {
       question: 'What’s included?',
       answer: 'Complete K-12 STEM curriculum, 30 toys, unlimited AR experiences, adaptive AI.',
@@ -321,7 +321,7 @@ export const faqs = {
     },
     {
       question: 'Do you replace schoolwork?',
-      answer: 'CodexAR supplements school learning with 15–20 minute active sessions, 3–5x per week.',
+      answer: 'ARious supplements school learning with 15–20 minute active sessions, 3–5x per week.',
     },
     { question: 'Is there a trial?', answer: 'Yes. 7-day free trial at launch plus 30-day money-back guarantee.' },
   ],

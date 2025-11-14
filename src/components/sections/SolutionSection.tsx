@@ -6,7 +6,7 @@ import { FadeInOnScroll } from '../motion/Primitives'
 const SolutionSection = () => (
   <SectionWrapper
     id="solution"
-    eyebrow="The CodexAR solution"
+    eyebrow="The ARious solution"
     headline={solutionSection.title}
     description={solutionSection.subtitle}
   >

@@ -4,8 +4,8 @@ const Footer = () => (
   <footer className="border-t border-white/10 bg-ink-950 px-6 py-10 text-sm text-ink-300">
     <div className="mx-auto flex max-w-6xl flex-col gap-6 md:flex-row md:items-center md:justify-between">
       <div>
-        <p className="font-display text-xl text-white">CodexAR / ARious</p>
-        <p className="text-xs tracking-widest text-ink-400">© 2025 CodexAR. All rights reserved.</p>
+        <p className="font-display text-xl text-white">ARious</p>
+        <p className="text-xs tracking-widest text-ink-400">© 2025 ARious. All rights reserved.</p>
       </div>
       <nav className="flex flex-wrap gap-4">
         {navLinks.map((link) => (
