@@ -1,39 +1,38 @@
 import SectionWrapper from '../layout/SectionWrapper'
-import { experienceSection } from '../../data/content'
+import { solutionSection } from '../../data/content'
 import { FadeInOnScroll } from '../motion/Primitives'
+import Button from '../common/Button'
 
 const SolutionSection = () => (
   <SectionWrapper
-    id="experience"
-    eyebrow="How ARious works"
-    headline={experienceSection.title}
-    description={experienceSection.description}
+    id="solution"
+    eyebrow="Our Solution"
+    headline={solutionSection.title}
+    description={solutionSection.subtitle}
   >
     <div className="grid gap-6 lg:grid-cols-3">
-      {experienceSection.story.map((card) => (
+      {solutionSection.features.map((feature) => (
         <FadeInOnScroll
-          key={card.title}
+          key={feature.title}
           className="rounded-3xl border border-white/10 bg-gradient-to-b from-white/[0.03] to-transparent p-6"
           y={32}
         >
-          <p className="text-xs uppercase tracking-[0.4em] text-aurora-200">{card.title}</p>
-          <p className="mt-3 text-ink-100">{card.body}</p>
+          <p className="text-xs uppercase tracking-[0.4em] text-aurora-200">{feature.title}</p>
+          <h3 className="mt-2 font-display text-2xl text-white">{feature.tagline}</h3>
+          <p className="mt-3 text-ink-200">{feature.body}</p>
+          <p className="mt-4 text-sm text-ink-300">{feature.stat}</p>
+          <p className="mt-4 text-sm font-medium text-ink-100">{feature.benefit}</p>
         </FadeInOnScroll>
       ))}
     </div>
-    <div className="rounded-3xl border border-white/10 bg-white/[0.02] p-6">
-      <p className="text-sm uppercase tracking-[0.4em] text-ink-400">Curiosity path</p>
-      <div className="mt-4 grid gap-6 md:grid-cols-3">
-        {experienceSection.steps.map((step) => (
-          <FadeInOnScroll key={step.label} className="space-y-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 text-white">
-              {step.label}
-            </div>
-            <p className="text-ink-200">{step.body}</p>
-          </FadeInOnScroll>
-        ))}
+    
+    <FadeInOnScroll className="rounded-3xl border border-white/10 bg-gradient-to-r from-ink-900 to-ink-800 p-8 text-center">
+      <p className="text-sm uppercase tracking-[0.4em] text-aurora-200">{solutionSection.tagline}</p>
+      <p className="mt-4 text-xl text-white md:text-2xl">{solutionSection.formula}</p>
+      <div className="mt-6">
+        <Button href="#waitlist">Reserve Your Spot</Button>
       </div>
-    </div>
+    </FadeInOnScroll>
   </SectionWrapper>
 )
 
