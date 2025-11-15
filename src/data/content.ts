@@ -1,32 +1,28 @@
 export const navLinks = [
-  { label: 'Why ARious', href: '#solution' },
-  { label: 'How It Works', href: '#how-it-works' },
-  { label: 'For Parents', href: '#parents' },
-  { label: 'For Schools', href: '#schools' },
+  { label: 'Why ARious', href: '#crisis' },
+  { label: 'How it works', href: '#experience' },
   { label: 'Research', href: '#research' },
+  { label: 'Proof', href: '#social-proof' },
   { label: 'FAQ', href: '#faq' },
+  { label: 'Join waitlist', href: '#waitlist' },
 ] as const
 
 export const heroContent = {
-  tag: 'Launching December 2025',
-  title: 'Where curiosity becomes mastery',
+  tag: 'Education 3.0 preview • Waitlist opens December 16',
+  title: 'Are you curious enough to see ARious in action?',
   subtitle:
-    'The first K-12 STEM platform combining real-world objects, immersive AR, and adaptive AI—turning abstract concepts into hands-on discoveries that spark lifelong curiosity.',
+    'We pair tactile prompts, augmented reality, and adaptive guidance so families can feel what Education 3.0 looks like—without waiting for the classroom to catch up.',
   body:
-    '30 innovative learning toys spanning K-12, each unlocking AR experiences that adapt to every learner’s pace. Developed by Dr. Sudhakar Agarkar, fusing 40+ years of research-backed pedagogy with cutting-edge technology.',
+    'This beta window is intentionally small. We’re inviting parents who love experimenting to try the teaser experience, share feedback, and influence the launch.',
+  bullets: [
+    'Built with research from the Healthy Education Hub',
+    'Designed by Dr. Sudhakar Agarkar after 40+ years in learning science',
+    'Interactive curiosity path that funnels straight into the experience',
+  ],
   primaryCta: { label: 'Join the waitlist', href: '#waitlist' },
-  secondaryCta: { label: 'Request pilot program', href: '#schools-form' },
-  trustBadges: [
-    'Launching December 2025',
-    'Helsinki Education Hub Partner',
-    'Research-backed by TIFR',
-  ],
-  stats: [
-    { label: 'Parents on waitlist', value: '12,847+' },
-    { label: 'Schools requesting pilots', value: '245' },
-    { label: 'Countries interested', value: '19' },
-    { label: 'Learning toys across K-12', value: '30' },
-  ],
+  secondaryCta: { label: 'See how it works', href: '#experience' },
+  prompt:
+    'Curiosity unlocks the teaser: unzip the preview when it drops, or tap Join Waitlist now so you don’t miss the moment.',
 } as const
 
 export const crisisSection = {
@@ -51,167 +47,37 @@ export const crisisSection = {
   closing: "There's a better way to learn STEM.",
 } as const
 
-export const solutionSection = {
-  title: 'The only platform that brings STEM to life—literally',
-  subtitle: 'Physical manipulation + augmented reality + adaptive AI',
-  pillars: [
+export const experienceSection = {
+  title: 'One tactile journey, three simple beats',
+  description:
+    'We condensed the full ARious platform into a short curiosity path. Parents see the flow in minutes without scrolling through multiple sections.',
+  story: [
     {
-      label: 'Physical Objects',
-      title: 'Touch creates understanding',
-      description:
-        'Each experience starts with tangible molecular models, geometric manipulatives, and engineering components that boost spatial reasoning by 68%.',
-      footnote: '30 expertly designed toys across math, physics, chemistry, biology, and engineering.',
+      title: 'Grounded in research',
+      body: 'Every interaction is drawn from the Healthy Education Hub’s findings on multi-sensory learning so exploration always has purpose.',
     },
     {
-      label: 'Augmented Reality',
-      title: 'See the invisible, understand the impossible',
-      description:
-        'Point any device at an ARious object and watch abstract concepts materialize in 3D space. Rotate molecules, visualize force vectors, manipulate geometry.',
-      footnote: 'Active, spatial problem-solving replaces passive screen time.',
+      title: 'Crafted by Dr. Sudhakar',
+      body: 'Four decades of constructivist learning research shape the prompts, pacing, and reflection moments in the teaser.',
     },
     {
-      label: 'Adaptive AI',
-      title: 'Learning that knows each child',
-      description:
-        'AI interprets how every learner thinks, adapts difficulty on the fly, spots misconceptions, and celebrates progress.',
-      footnote: 'From struggling to confident—AI ensures every child succeeds.',
+      title: 'Built for curiosity',
+      body: 'One tactile moment unlocks an AR reveal, which cues a quick adaptive nudge—then loops you back into the waitlist flow.',
     },
   ],
-  integration:
-    'Physical foundations + AR visualization + AI personalization = learning that actually sticks. Students in multimodal environments see 34% better retention and 45% faster comprehension.',
-  cta: { label: 'Reserve your spot', href: '#waitlist' },
-} as const
-
-export const howItWorks = {
-  title: 'Learning adventures in three simple steps',
   steps: [
     {
-      label: 'Choose Your Discovery',
-      description:
-        'Select from 30 age-appropriate STEM toys delivered to your door, or unlock the entire library with the Complete Collection.',
+      label: 'Prime',
+      body: 'Open the teaser, answer one curiosity prompt, and meet the physical object that kicks off the story.',
     },
     {
-      label: 'Touch and Explore',
-      description:
-        'Manipulate physical objects while AR brings concepts to life on any smartphone or tablet—no special equipment required.',
+      label: 'Reveal',
+      body: 'Use your phone to unzip the AR layer and watch the invisible concept appear around the object.',
     },
     {
-      label: 'Grow and Master',
-      description:
-        'Adaptive AI tracks understanding, calibrates the next challenge, and surfaces insights inside intuitive parent and teacher dashboards.',
+      label: 'Respond',
+      body: 'ARious adapts with a short challenge and routes you straight into the waitlist confirmation.',
     },
-  ],
-} as const
-
-export const parentSection = {
-  title: 'Watch your child discover the joy of STEM',
-  subtitle: "From 'I can’t' to 'Let me show you what I learned'—in just 30 days",
-  pains: [
-    {
-      title: 'Homework battles',
-      body: '94% of parents say their child asks to keep learning after the first ARious session.',
-    },
-    {
-      title: 'Screen time concerns',
-      body: 'Active problem-solving with 20-minute guided sessions means screen time you can feel good about.',
-    },
-    {
-      title: 'Keeping up',
-      body: 'Adaptive AI meets every learner exactly where they are and builds visible confidence.',
-    },
-    {
-      title: 'Expensive tutoring',
-      body: 'Founding members pay less than $1/day for unlimited, personalized K-12 STEM learning.',
-    },
-  ],
-  benefits: [
-    '30 hands-on STEM toys across the K-12 journey',
-    'Hundreds of adaptive AR experiences',
-    'Confidence that extends beyond STEM',
-    'Future-ready skills for careers that don’t exist yet',
-  ],
-  testimonials: [
-    {
-      quote:
-        'My 7-year-old struggled with fractions for months. Two weeks with ARious and she was teaching me using the physical models.',
-      author: 'Sarah M., mother of two (Boston)',
-    },
-    {
-      quote:
-        'I was skeptical about more screen time until I saw my son actively problem-solving with AR molecules. He’s engaged and actually learning.',
-      author: 'James K., father of a 9-year-old (Seattle)',
-    },
-  ],
-  pricing: 'First 1,000 waitlist members lock in 50% off—less than $1/day.',
-  cta: { label: 'Secure your early access discount', href: '#waitlist-form' },
-  faq: [
-    'What ages is this appropriate for?',
-    'What technology do we need?',
-    'How much screen time is involved?',
-    'Is my child’s data safe?',
-    'What if my child doesn’t like it?',
-  ],
-} as const
-
-export const schoolSection = {
-  title: 'Transform STEM outcomes with research-backed innovation',
-  subtitle: 'Increase achievement while reducing teacher burden and tool sprawl',
-  values: [
-    {
-      title: 'Measurable outcomes',
-      body: 'Pilot schools saw a 23% improvement in STEM assessments within one semester; ESSA Tier 2 evidence.',
-    },
-    {
-      title: 'Standards-aligned',
-      body: 'Aligned with NGSS, Common Core Math, and state standards with built-in formative assessments.',
-    },
-    {
-      title: 'Teacher efficiency',
-      body: 'Save 10+ hours per month with curriculum guides, differentiation tools, and automated progress tracking.',
-    },
-    {
-      title: 'Consolidate tools',
-      body: 'Single sign-on, LMS integrations, and unified data replace 5–10 disparate apps.',
-    },
-    {
-      title: 'Equity & access',
-      body: 'Universal Design for Learning principles, offline functionality, and support for diverse learners.',
-    },
-  ],
-  implementation: [
-    'Classroom kits for 30 students (materials included)',
-    'Comprehensive PD (virtual + in-person)',
-    'Pacing calendars and curriculum guides',
-    'Admin dashboard with ROI tracking',
-    'Dedicated customer success partner',
-  ],
-  comparison: [
-    { label: 'Interaction', before: 'Passive screen time', after: 'Active physical + digital' },
-    { label: 'Personalization', before: 'One-size-fits-all', after: 'AI-adaptive for every learner' },
-    { label: 'Tool sprawl', before: 'Adds more apps', after: 'Consolidates into one platform' },
-    { label: 'Evidence', before: 'Limited proof', after: 'ESSA Tier 2 research' },
-    { label: 'Support', before: 'Minimal onboarding', after: 'Full implementation + success team' },
-  ],
-  testimonials: [
-    {
-      quote:
-        'We piloted ARious in eight schools and saw immediate results. Students asked deeper questions and made cross-concept connections.',
-      author: 'Dr. Jennifer Williams, Curriculum Director',
-    },
-  ],
-  partnership:
-    'Selected by Helsinki Education Hub, one of the world’s leading education innovation networks.',
-  ctas: [
-    { label: 'Schedule implementation consultation', href: '#schools-form' },
-    { label: 'Request pilot details', href: '#schools-form' },
-    { label: 'Download curriculum alignment guide', href: '/docs/arious-curriculum.pdf' },
-  ],
-  faq: [
-    'Does it integrate with our LMS/SIS?',
-    'What professional development is included?',
-    'Is student data privacy compliant (FERPA/COPPA)?',
-    'What is total cost of ownership?',
-    'How do pilot programs work?',
   ],
 } as const
 
@@ -243,7 +109,11 @@ export const researchSection = {
 
 export const socialProofSection = {
   title: 'Join the education innovators shaping the future',
-  metrics: heroContent.stats,
+  metrics: [
+    { label: 'Healthy Education Hub', value: 'Research Partner' },
+    { label: 'Dr. Sudhakar', value: '40+ yrs in learning science' },
+    { label: 'Beta cohort', value: 'Invite-only' },
+  ],
   badges: ['COPPA Compliant', 'FERPA Certified', 'STEM.org Accredited', 'Privacy Certified', 'Research-backed'],
   testimonials: [
     {
@@ -270,7 +140,7 @@ export const waitlistSection = {
   urgency: {
     countdown: ['30 Days', '12 Hours', '45 Minutes', '12 Seconds'],
     remaining: 'Only 753 founding member spots remaining',
-    queue: 'There are 3,333 members ahead of you. Want to move faster?',
+    queue: 'Curiosity count refreshes daily—secure your invite before the drop.',
   },
   benefits: [
     'Priority access before public launch',
@@ -289,17 +159,6 @@ export const waitlistSection = {
     ],
     submitLabel: 'Join Waitlist — Lock in 50% Off',
   },
-  schoolForm: {
-    id: 'schools-form',
-    title: 'Schedule Consultation',
-    fields: [
-      { label: 'School / District', name: 'organization', type: 'text', required: true },
-      { label: 'Role', name: 'role', type: 'text', required: true },
-      { label: 'Email', name: 'email', type: 'email', required: true },
-      { label: 'Student Count', name: 'students', type: 'number', required: true },
-    ],
-    submitLabel: 'Request Pilot Program',
-  },
   referral: [
     'Share with 3 friends and jump 100 spots',
     '5 referrals: +200 spots and 60% off',
@@ -310,20 +169,27 @@ export const waitlistSection = {
 
 export const faqs = {
   general: [
-    { question: 'When does ARious launch?', answer: 'December 2025 with 30-day early waitlist access.' },
     {
-      question: 'What’s included?',
-      answer: 'Complete K-12 STEM curriculum, 30 toys, unlimited AR experiences, adaptive AI.',
+      question: 'How do I get it?',
+      answer: "Add your email to the waitlist. We'll send the teaser link plus simple steps to unlock the preview on December 16.",
     },
     {
-      question: 'What tech do we need?',
-      answer: 'Any iOS 11+ or Android 7.0+ smartphone or tablet works. No special hardware required.',
+      question: 'Is it safe for my kids?',
+      answer:
+        'Yes. The AR layer runs on your existing phone or tablet, data is encrypted, and every interaction follows kid-safe design guidelines.',
     },
     {
-      question: 'Do you replace schoolwork?',
-      answer: 'ARious supplements school learning with 15–20 minute active sessions, 3–5x per week.',
+      question: 'What materials are used?',
+      answer: 'We ship recyclable paper prompts for the beta. The production version uses durable plant-based polymers.',
     },
-    { question: 'Is there a trial?', answer: 'Yes. 7-day free trial at launch plus 30-day money-back guarantee.' },
+    {
+      question: 'What ages is it for?',
+      answer: "The teaser targets curious kids ages 7–13, but the full platform spans K-12. We'll ask about grade level when you join.",
+    },
+    {
+      question: 'Are you certified?',
+      answer: 'Yes. ARious is backed by the Healthy Education Hub and aligns with COPPA/FERPA guidelines. Full certifications roll out at launch.',
+    },
   ],
 } as const
 
