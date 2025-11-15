@@ -1,15 +1,12 @@
 import SectionWrapper from '../layout/SectionWrapper'
-import { faqs, waitlistSection } from '../../data/content'
+import { faqs } from '../../data/content'
 import { useState } from 'react'
 
 const FAQSection = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null)
 
   return (
-    <SectionWrapper id="faq" eyebrow="FAQ" headline="Answers before you unzip the teaser">
-      <p className="text-sm uppercase tracking-[0.3em] text-aurora-200">
-        {waitlistSection.urgency.remaining} • clock resets with the countdown above
-      </p>
+    <SectionWrapper id="faq" eyebrow="FAQ" headline="FAQs">
       <div className="space-y-4">
         {faqs.general.map((faq, index) => {
           const isOpen = openIndex === index

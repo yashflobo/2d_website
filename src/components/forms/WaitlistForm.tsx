@@ -4,6 +4,7 @@ type Field = {
   label: string
   name: string
   type: string
+  placeholder?: string
   required?: boolean
 }
 
@@ -12,9 +13,10 @@ type WaitlistFormProps = {
   title: string
   fields: ReadonlyArray<Field>
   submitLabel: string
+  successMessage?: string
 }
 
-const WaitlistForm = ({ id, title, fields, submitLabel }: WaitlistFormProps) => {
+const WaitlistForm = ({ id, title, fields, submitLabel, successMessage }: WaitlistFormProps) => {
   const [submitted, setSubmitted] = useState(false)
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
@@ -29,7 +31,6 @@ const WaitlistForm = ({ id, title, fields, submitLabel }: WaitlistFormProps) => 
       className="rounded-3xl border border-white/10 bg-white/[0.02] p-6 shadow-lg shadow-black/10"
     >
       <h3 className="font-display text-2xl text-white">{title}</h3>
-      <p className="mt-1 text-sm text-ink-300">Your spot is moments away.</p>
       <div className="mt-6 space-y-4">
         {fields.map((field) => (
           <label key={field.name} className="block text-sm">
@@ -38,6 +39,7 @@ const WaitlistForm = ({ id, title, fields, submitLabel }: WaitlistFormProps) => 
               className="mt-2 w-full rounded-2xl border border-white/10 bg-ink-900 px-4 py-3 text-white outline-none transition focus:border-aurora-400"
               type={field.type}
               name={field.name}
+              placeholder={field.placeholder}
               required={field.required}
             />
           </label>
@@ -51,7 +53,7 @@ const WaitlistForm = ({ id, title, fields, submitLabel }: WaitlistFormProps) => 
       </button>
       {submitted && (
         <p className="mt-4 rounded-2xl border border-aurora-400/50 bg-aurora-500/10 px-4 py-3 text-sm text-aurora-100">
-          🎉 You’re on the list! Check your email for next steps and your unique referral link.
+          {successMessage || "🎉 You're on the list! Check your email for next steps and your unique referral link."}
         </p>
       )}
     </form>
