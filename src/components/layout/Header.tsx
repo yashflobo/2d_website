@@ -18,21 +18,13 @@ const Header = () => {
           </div>
         </a>
         <nav className="hidden items-center gap-8 text-sm text-ink-200 md:flex">
-          {navLinks.map((link) => (
+          {navLinks.map((link: { label: string; href: string }) => (
             <a key={link.href} href={link.href} className="transition hover:text-white">
               {link.label}
             </a>
           ))}
         </nav>
         <div className="hidden items-center gap-3 md:flex">
-          {heroContent.secondaryCta ? (
-            <a
-              href={heroContent.secondaryCta.href}
-              className="rounded-full border border-white/20 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/10"
-            >
-              {heroContent.secondaryCta.label}
-            </a>
-          ) : null}
           <a
             href={heroContent.primaryCta.href}
             className="rounded-full bg-aurora-500 px-4 py-2 text-sm font-semibold text-ink-950 shadow-glow-sm transition hover:bg-aurora-400"
@@ -53,7 +45,7 @@ const Header = () => {
       {open && (
         <div className="border-t border-white/10 bg-ink-900/95 px-6 pb-6 pt-2 md:hidden">
           <nav className="flex flex-col gap-3 text-sm text-ink-100">
-            {navLinks.map((link) => (
+            {navLinks.map((link: { label: string; href: string }) => (
               <a key={link.href} href={link.href} className="rounded-lg px-3 py-2 transition hover:bg-white/5">
                 {link.label}
               </a>

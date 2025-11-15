@@ -1,177 +1,198 @@
 export const navLinks = [
-  { label: 'Why ARious', href: '#crisis' },
-  { label: 'How it works', href: '#experience' },
-  { label: 'Research', href: '#research' },
-  { label: 'Proof', href: '#social-proof' },
-  { label: 'FAQ', href: '#faq' },
-  { label: 'Join waitlist', href: '#waitlist' },
+  { label: 'Home', href: '#hero' },
+  { label: 'Register', href: '#waitlist' },
 ] as const
 
 export const heroContent = {
-  tag: 'Education 3.0 preview • Waitlist opens December 16',
-  title: 'Are you curious enough to see ARious in action?',
+  tag: 'Launching December 2025',
+  title: 'Where Curiosity Becomes Mastery',
   subtitle:
-    'We pair tactile prompts, augmented reality, and adaptive guidance so families can feel what Education 3.0 looks like—without waiting for the classroom to catch up.',
-  body:
-    'This beta window is intentionally small. We’re inviting parents who love experimenting to try the teaser experience, share feedback, and influence the launch.',
-  bullets: [
-    'Built with research from the Healthy Education Hub',
-    'Designed by Dr. Sudhakar Agarkar after 40+ years in learning science',
-    'Interactive curiosity path that funnels straight into the experience',
-  ],
-  primaryCta: { label: 'Join the waitlist', href: '#waitlist' },
-  secondaryCta: { label: 'See how it works', href: '#experience' },
-  prompt:
-    'Curiosity unlocks the teaser: unzip the preview when it drops, or tap Join Waitlist now so you don’t miss the moment.',
+    'The first K-12 STEM platform that combines real-world objects, immersive AR, and adaptive AI — transforming abstract concepts into hands-on discoveries that spark lifelong curiosity.',
+  stats: {
+    toys: '30 innovative learning toys spanning K-12',
+    toyDescription: 'each unlocking augmented reality experiences that adapt to your child\'s pace.',
+    developer: 'Developed by renowned education researcher Dr. Sudhakar Agarkar',
+    experience: 'combining 40+ years of learning science with cutting-edge technology.',
+  },
+  metrics: {
+    parents: '12,847+ parents',
+    schools: '245 schools',
+    waitlistText: 'on the waitlist',
+  },
+  urgency: {
+    remaining: 'Only 753 founding member spots remaining',
+    queue: 'There are 3333 members ahead of you. Want to move up faster?',
+  },
+  primaryCta: { label: 'Join the Waitlist for Early Access', href: '#waitlist' },
+  secondaryCta: null,
 } as const
 
 export const crisisSection = {
-  title: 'Three crises are holding our children back',
+  title: 'Abstract concepts stay abstract',
   cards: [
     {
-      title: 'The Learner Crisis',
-      body: `87% of students struggle with abstract STEM concepts because they've never experienced them directly. Worksheets can’t bridge the gap between imagination and understanding.`,
-      note: `Parents watch memorization replace understanding; teachers explain concepts five different ways without stickiness.`,
+      title: 'Passive screen time isn\'t learning',
+      body: `Educational apps too often mean passive watching—just edutainment that entertains but doesn\'t educate.`,
+      note: `28% of educators cite engagement as their top challenge, knowing that true learning requires active problem-solving, not just clicking through content.`,
+      quote: `You\'ve watched your child memorize formulas without truly grasping what they mean.`,
     },
     {
-      title: 'The Teacher Crisis',
-      body: `Schools juggle nearly 3,000 EdTech tools. Teachers spend hours curating, managing logins, and troubleshooting—time stolen from actual teaching.`,
-      note: `Tool sprawl burns valuable planning hours and fragments data.`,
+      title: 'Teachers are drowning in tool sprawl',
+      body: `The average school uses 2,982 different EdTech tools, forcing teachers to spend hours curating content, managing logins, and troubleshooting technology instead of teaching.`,
+      note: `What should enhance learning has become a burden.`,
+      quote: `You\'ve explained the same concept five different ways, yet students still can\'t apply it.`,
     },
     {
-      title: 'The Engagement Crisis',
-      body: `Passive screen time entertains but rarely educates. 28% of educators cite engagement as their top challenge; true learning needs active problem-solving.`,
-      note: `Most “learning apps” are just videos and quizzes. Students need interaction.`,
+      title: 'Abstract concepts stay abstract',
+      body: `Traditional methods expect children to visualize molecules, geometric transformations, and physics forces in their minds. But 87% of students struggle with abstract STEM concepts because they\'ve never experienced them directly.`,
+      note: `Worksheets and diagrams can\'t bridge the gap between imagination and understanding.`,
+      quote: `You\'ve watched your child memorize formulas without truly grasping what they mean.`,
     },
   ],
   closing: "There's a better way to learn STEM.",
 } as const
 
-export const experienceSection = {
-  title: 'One tactile journey, three simple beats',
-  description:
-    'We condensed the full ARious platform into a short curiosity path. Parents see the flow in minutes without scrolling through multiple sections.',
-  story: [
+export const solutionSection = {
+  title: 'The only platform that brings STEM to life—literally',
+  subtitle: 'We combine what no one else can',
+  tagline: 'This is the breakthrough:',
+  formula: 'Physical foundations + AR visualization + AI personalization = Learning that actually sticks',
+  features: [
     {
-      title: 'Grounded in research',
-      body: 'Every interaction is drawn from the Healthy Education Hub’s findings on multi-sensory learning so exploration always has purpose.',
+      title: 'Physical manipulation',
+      tagline: 'Touch creates understanding',
+      body: 'Every CodexAR experience begins with a tangible object—molecular models, geometric manipulatives, engineering components.',
+      stat: 'Research shows physical manipulation improves spatial reasoning by 68% and creates neural pathways that screen-only learning cannot.',
+      benefit: '30 expertly designed toys spanning K-12 mathematics, physics, chemistry, biology, and engineering.',
     },
     {
-      title: 'Crafted by Dr. Sudhakar',
-      body: 'Four decades of constructivist learning research shape the prompts, pacing, and reflection moments in the teaser.',
+      title: 'Augmented reality',
+      tagline: 'See the invisible, understand the impossible',
+      body: 'Point your device at any CodexAR toy and watch abstract concepts materialize in 3D space. Rotate molecules to understand bonding. Visualize force vectors in real-time. Manipulate geometric transformations with your hands.',
+      stat: 'AR makes the invisible visible, transforming imagination into interaction.',
+      benefit: 'Not passive watching—active problem-solving through spatial interaction.',
     },
     {
-      title: 'Built for curiosity',
-      body: 'One tactile moment unlocks an AR reveal, which cues a quick adaptive nudge—then loops you back into the waitlist flow.',
+      title: 'Adaptive AI',
+      tagline: 'Learning that knows your child',
+      body: 'Our AI doesn\'t just deliver content—it understands how each learner thinks. CodexAR adapts difficulty in real-time, identifies misconceptions, suggests alternative approaches, and celebrates progress.',
+      stat: 'Every child moves at their own pace, building genuine mastery instead of just moving forward.',
+      benefit: 'From struggling to confident—AI ensures every child succeeds.',
     },
   ],
+} as const
+
+export const howItWorksSection = {
+  title: 'How it Works?',
+  subtitle: 'Learning adventures in three simple steps',
   steps: [
     {
-      label: 'Prime',
-      body: 'Open the teaser, answer one curiosity prompt, and meet the physical object that kicks off the story.',
+      title: 'Choose Your Discovery',
+      body: 'Select from 30 age-appropriate STEM toys delivered to your door, or access the full library with our Complete Collection. Each toy unlocks multiple learning experiences.',
     },
     {
-      label: 'Reveal',
-      body: 'Use your phone to unzip the AR layer and watch the invisible concept appear around the object.',
+      title: 'Touch and Explore',
+      body: 'Students manipulate physical objects while AR brings concepts to life on any device. No special equipment needed—works with smartphones and tablets you already have.',
     },
     {
-      label: 'Respond',
-      body: 'ARious adapts with a short challenge and routes you straight into the waitlist confirmation.',
+      title: 'Grow and Master',
+      body: 'AI tracks understanding, adapts challenges, and celebrates milestones. Parents and teachers see exactly what students are learning through intuitive dashboards.',
     },
   ],
 } as const
 
 export const researchSection = {
   title: 'Developed by a pioneer in learning science',
-  mission: 'On a mission to fuel every student’s curiosity and empower teachers with the tools to make it happen.',
+  subtitle: 'Dr. Sudhakar Agarkar',
+  tagline: 'Four decades transforming education',
+  mission: 'On a mission to fuel every student\'s curiosity and empower teachers with tools to make it happen.',
   bio: {
     name: 'Dr. Sudhakar Agarkar',
-    title: 'Chief Knowledge Officer, ARious • Professor Emeritus, TIFR',
+    title: 'Chief Knowledge Officer at CodexAR and Professor Emeritus at the Tata Institute of Fundamental Research (TIFR)',
+    intro: 'one of India\'s most prestigious research institutions.',
     summary:
-      '40+ years advancing constructivist STEM learning through the Remedial Instructional Strategy (RIS), proven with disadvantaged learners across India.',
+      'For over 40 years, he\'s dedicated his career to a singular mission: Making STEM education accessible and effective for every student, regardless of background.',
     credentials: [
       'Professor at TIFR Homi Bhabha Centre for Science Education',
       'PhD in Science Education focused on learning difficulties',
-      'International expert across 15+ countries',
-      'Published researcher and Springer handbook contributor',
-      'Teacher trainer for thousands of educators',
+      'Published Researcher and Springer handbook contributor',
+      'Teacher Trainer for thousands of educators across 4 continents',
+      'International Expert presented in 15+ countries',
     ],
+    hurdlesTitle: 'Dr. Agarkar\'s research revealed four fundamental learning hurdles:',
     hurdles: [
       'Lack of direct experience with abstract concepts',
       'Unsatisfied curiosity when questions go unanswered',
-      'Limited peer interaction for collaboration',
-      'Poor communication competence when expressing understanding',
+      'Limited peer interaction reducing collaborative learning',
+      'Poor communication competence expressing understanding',
     ],
     quote:
-      '“The role of teachers has changed from imparting information to facilitating the construction of knowledge.”',
+      '"The role of teachers has changed from the person imparting information to a person facilitating the construction of knowledge."',
+    quoteAuthor: '— Dr. Sudhakar Agarkar',
+    provenTitle: 'Proven with the students who need it most',
+    provenText:
+      'Dr. Agarkar developed his Remedial Instructional Strategy (RIS) working with disadvantaged communities—slumdwellers in Mumbai and tribal students in rural India. His methods significantly enhanced student performance where traditional approaches failed.',
   },
 } as const
 
 export const socialProofSection = {
   title: 'Join the education innovators shaping the future',
   metrics: [
-    { label: 'Healthy Education Hub', value: 'Research Partner' },
-    { label: 'Dr. Sudhakar', value: '40+ yrs in learning science' },
-    { label: 'Beta cohort', value: 'Invite-only' },
+    { label: 'parents', value: '12,847+', subtext: 'on the waitlist' },
+    { label: 'schools', value: '245', subtext: 'requesting pilots' },
+    { label: 'countries', value: '19', subtext: 'expressing interest' },
+    { label: 'learning toys', value: '30', subtext: 'spanning K-12' },
   ],
-  badges: ['COPPA Compliant', 'FERPA Certified', 'STEM.org Accredited', 'Privacy Certified', 'Research-backed'],
+  badges: ['COPPA Compliant', 'FERPA Certified', 'STEM.org Accredited', 'Privacy Certified', 'Research-Backed'],
   testimonials: [
     {
       role: 'Teacher',
       quote:
-        'Finally, technology that aligns with how I teach. The physical components mean students build intuition before abstraction.',
+        'Finally, technology that aligns with how I teach. The physical components mean students build intuition before abstraction—exactly what learning science tells us works.',
     },
     {
       role: 'Principal',
       quote:
-        'We evaluated 14 STEM platforms. ARious was the only one balancing research backing, standards alignment, and true engagement.',
+        'We evaluated 14 STEM platforms. CodexAR was the only one combining research backing, standards alignment, and genuine student engagement. Easy choice.',
     },
     {
       role: 'Parent',
       quote:
-        'Dr. Agarkar’s credentials and the Helsinki partnership prove this isn’t just another edtech fad—it’s the future.',
+        'I researched everything before committing. Dr. Agarkar\'s credentials and the Helsinki partnership convinced me this isn\'t just another edtech fad — it\'s the real deal.',
     },
   ],
 } as const
 
 export const waitlistSection = {
   title: 'Be among the first to transform STEM learning',
-  subtitle: 'Launching December 2025—early access opens in 90 days.',
-  urgency: {
-    countdown: ['30 Days', '12 Hours', '45 Minutes', '12 Seconds'],
-    remaining: 'Only 753 founding member spots remaining',
-    queue: 'Curiosity count refreshes daily—secure your invite before the drop.',
-  },
+  subtitle: 'Launching December 2025 — early access opens in 90 days',
   benefits: [
     'Priority access before public launch',
-    'Founding member pricing (50% off first 1,000)',
+    'Founding member pricing (50% off for first 1,000)',
     'Exclusive behind-the-scenes updates',
     'Beta testing opportunity (select members)',
-    'Lifetime discount locked in',
+    'Lifetime discount locked-in',
+    '30-day money-back guarantee once launched',
   ],
   parentForm: {
     id: 'waitlist-form',
-    title: 'Join the Waitlist',
+    title: 'Join Waitlist',
+    submitLabel: 'Lock in 50% Off',
     fields: [
-      { label: 'First Name', name: 'firstName', type: 'text', required: true },
-      { label: 'Email', name: 'email', type: 'email', required: true },
-      { label: "Child's Grade", name: 'grade', type: 'text', required: true },
+      { label: 'Email', name: 'email', type: 'email', placeholder: 'example@email.com', required: true },
+      { label: 'First Name', name: 'firstName', type: 'text', placeholder: 'John', required: true },
+      { label: "Child's Grade", name: 'grade', type: 'text', placeholder: 'John Carter', required: true },
     ],
-    submitLabel: 'Join Waitlist — Lock in 50% Off',
+    successMessage: "You're on the list! Check your email for next steps and your unique referral link.",
   },
-  referral: [
-    'Share with 3 friends and jump 100 spots',
-    '5 referrals: +200 spots and 60% off',
-    '10 referrals: +500 spots and first toy free',
-    'Top 50: Lifetime discount and recognition',
-  ],
+  note: 'Parent specific registration form will be used as a separate webpage after clicking on \'CTA Button\' by a user.',
 } as const
 
 export const faqs = {
   general: [
     {
       question: 'How do I get it?',
-      answer: "Add your email to the waitlist. We'll send the teaser link plus simple steps to unlock the preview on December 16.",
+      answer: "Add your email to the waitlist. We\'ll send you access information and next steps when we launch in December 2025.",
     },
     {
       question: 'Is it safe for my kids?',
@@ -180,15 +201,19 @@ export const faqs = {
     },
     {
       question: 'What materials are used?',
-      answer: 'We ship recyclable paper prompts for the beta. The production version uses durable plant-based polymers.',
+      answer: 'We use durable, child-safe materials for all physical toys. The production version uses recyclable and plant-based polymers where possible.',
     },
     {
-      question: 'What ages is it for?',
-      answer: "The teaser targets curious kids ages 7–13, but the full platform spans K-12. We'll ask about grade level when you join.",
+      question: 'What age group is appropriate?',
+      answer: "CodexAR spans K-12 (ages 5-18) with age-appropriate content for each grade level. We\'ll ask about your child\'s grade when you join the waitlist.",
     },
     {
       question: 'Are you certified?',
-      answer: 'Yes. ARious is backed by the Healthy Education Hub and aligns with COPPA/FERPA guidelines. Full certifications roll out at launch.',
+      answer: 'Yes. CodexAR is backed by renowned learning science research and aligns with COPPA/FERPA guidelines. We hold STEM.org accreditation and maintain privacy certifications.',
+    },
+    {
+      question: 'Can I try this for Free?',
+      answer: 'We offer a 30-day money-back guarantee once launched. Beta testing opportunities are available for select waitlist members.',
     },
   ],
 } as const
