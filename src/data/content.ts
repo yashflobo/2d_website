@@ -9,8 +9,7 @@ export const heroContent = {
   subtitle:
     'The first K-12 STEM platform that combines real-world objects, immersive AR, and adaptive AI — transforming abstract concepts into hands-on discoveries that spark lifelong curiosity.',
   stats: {
-    toys: '30 innovative learning toys spanning K-12',
-    toyDescription: 'each unlocking augmented reality experiences that adapt to your child\'s pace.',
+    toyDescription: 'Unlocking augmented reality experiences that adapt to your child\'s pace.',
     developer: 'Developed by renowned education researcher Dr. Sudhakar Agarkar',
     experience: 'combining 40+ years of learning science with cutting-edge technology.',
   },
@@ -63,7 +62,7 @@ export const solutionSection = {
       tagline: 'Touch creates understanding',
       body: 'Every CodexAR experience begins with a tangible object—molecular models, geometric manipulatives, engineering components.',
       stat: 'Research shows physical manipulation improves spatial reasoning by 68% and creates neural pathways that screen-only learning cannot.',
-      benefit: '30 expertly designed toys spanning K-12 mathematics, physics, chemistry, biology, and engineering.',
+      benefit: 'Expertly designed experiences spanning K-12 mathematics, physics, chemistry, biology, and engineering.',
     },
     {
       title: 'Augmented reality',
@@ -88,7 +87,7 @@ export const howItWorksSection = {
   steps: [
     {
       title: 'Choose Your Discovery',
-      body: 'Select from 30 age-appropriate STEM toys delivered to your door, or access the full library with our Complete Collection. Each toy unlocks multiple learning experiences.',
+      body: 'Select from age-appropriate STEM experiences delivered to your door, or access the full library with our Complete Collection. Each experience unlocks multiple learning opportunities.',
     },
     {
       title: 'Touch and Explore',
@@ -141,7 +140,6 @@ export const socialProofSection = {
     { label: 'parents', value: '12,847+', subtext: 'on the waitlist' },
     { label: 'schools', value: '245', subtext: 'requesting pilots' },
     { label: 'countries', value: '19', subtext: 'expressing interest' },
-    { label: 'learning toys', value: '30', subtext: 'spanning K-12' },
   ],
   badges: ['COPPA Compliant', 'FERPA Certified', 'STEM.org Accredited', 'Privacy Certified', 'Research-Backed'],
   testimonials: [

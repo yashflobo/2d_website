@@ -21,7 +21,7 @@ const HeroSection = () => (
         </FadeInOnScroll>
         <FadeInOnScroll delay={0.2}>
           <p className="text-ink-300">
-            {heroContent.stats.toys} {heroContent.stats.toyDescription}
+            {heroContent.stats.toyDescription}
           </p>
         </FadeInOnScroll>
         <FadeInOnScroll delay={0.25}>
