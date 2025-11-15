@@ -29,9 +29,9 @@ Visit http://localhost:5173 to preview the site. Edits in `src/` hot-reload auto
 
 ## Content architecture
 
-All textual content, stats, FAQs, and CTAs live in `src/data/content.ts`. Update this file (instead of scattering copy through components) to keep the dual parent/school messaging consistent.
+All textual content, FAQs, CTA labels, and countdown copy live in `src/data/content.ts`. Edit that single file to update hero bullets, the consolidated “How it works” story, the waitlist form, or the buyer-focused FAQ.
 
-Sections live under `src/components/sections/**` and are composed inside `src/pages/Landing.tsx`. Shared UI (header/footer, buttons, motion primitives) lives in `src/components`.
+Sections live under `src/components/sections/**` and are composed inside `src/pages/Landing.tsx`. The middle of the page is intentionally lean: crisis context → consolidated experience section → research/proof → waitlist + FAQ. Shared UI (header/footer, buttons, motion primitives) lives in `src/components`.
 
 ## Deploying to Vercel
 

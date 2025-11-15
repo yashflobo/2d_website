@@ -10,7 +10,7 @@ const Header = () => {
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <a href="#hero" className="flex items-center gap-3">
           <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-aurora text-ink-950 font-bold">
-            CA
+            AR
           </div>
           <div>
             <p className="font-display text-lg text-white">ARious</p>
@@ -25,12 +25,14 @@ const Header = () => {
           ))}
         </nav>
         <div className="hidden items-center gap-3 md:flex">
-          <a
-            href={heroContent.secondaryCta.href}
-            className="rounded-full border border-white/20 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/10"
-          >
-            {heroContent.secondaryCta.label}
-          </a>
+          {heroContent.secondaryCta ? (
+            <a
+              href={heroContent.secondaryCta.href}
+              className="rounded-full border border-white/20 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/10"
+            >
+              {heroContent.secondaryCta.label}
+            </a>
+          ) : null}
           <a
             href={heroContent.primaryCta.href}
             className="rounded-full bg-aurora-500 px-4 py-2 text-sm font-semibold text-ink-950 shadow-glow-sm transition hover:bg-aurora-400"
