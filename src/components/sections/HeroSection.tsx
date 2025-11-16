@@ -24,11 +24,6 @@ const HeroSection = () => (
             {heroContent.stats.toyDescription}
           </p>
         </FadeInOnScroll>
-        <FadeInOnScroll delay={0.25}>
-          <p className="text-ink-300">
-            {heroContent.stats.developer}, {heroContent.stats.experience}
-          </p>
-        </FadeInOnScroll>
         <FadeInOnScroll delay={0.28}>
           <p className="text-ink-200">{heroContent.stats.partnership}</p>
         </FadeInOnScroll>
@@ -42,7 +37,9 @@ const HeroSection = () => (
             <p className="text-lg text-white">
               {heroContent.metrics.parents} and {heroContent.metrics.schools} {heroContent.metrics.waitlistText}
             </p>
-            <Button href={heroContent.primaryCta.href}>{heroContent.primaryCta.label}</Button>
+            <Button as="link" to="/register">
+              {heroContent.primaryCta.label}
+            </Button>
           </div>
         </FadeInOnScroll>
       </div>

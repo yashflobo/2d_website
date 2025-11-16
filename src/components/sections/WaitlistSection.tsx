@@ -1,6 +1,6 @@
 import SectionWrapper from '../layout/SectionWrapper'
+import Button from '../common/Button'
 import { waitlistSection } from '../../data/content'
-import WaitlistForm from '../forms/WaitlistForm'
 
 const WaitlistSection = () => (
   <SectionWrapper
@@ -24,7 +24,15 @@ const WaitlistSection = () => (
         </div>
       </div>
       <div className="space-y-6">
-        <WaitlistForm {...waitlistSection.parentForm} />
+        <div className="rounded-3xl border border-white/10 bg-white/[0.02] p-6 shadow-lg shadow-black/10">
+          <h3 className="font-display text-2xl text-white">Ready to Join?</h3>
+          <p className="mt-4 text-ink-200">
+            Click the button below to register for the waitlist and secure your spot.
+          </p>
+          <Button as="link" to="/register" className="mt-6 w-full">
+            {waitlistSection.parentForm.submitLabel}
+          </Button>
+        </div>
         {waitlistSection.note && (
           <div className="rounded-3xl border border-white/10 bg-white/[0.02] p-6 text-sm text-ink-300">
             <p>{waitlistSection.note}</p>

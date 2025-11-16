@@ -1,7 +1,4 @@
-export const navLinks = [
-  { label: 'Home', href: '#hero' },
-  { label: 'Register', href: '#waitlist' },
-] as const
+export const navLinks = [] as const
 
 export const heroContent = {
   tag: 'Invite only launch in December',
@@ -10,8 +7,6 @@ export const heroContent = {
     'The first K-12 STEM platform that combines real-world objects, immersive AR, and adaptive AI — transforming abstract concepts into hands-on discoveries that spark lifelong curiosity.',
   stats: {
     toyDescription: 'Unlocking augmented reality experiences that adapt to your child\'s pace.',
-    developer: 'Developed by renowned education researcher Dr. Sudhakar Agarkar',
-    experience: 'combining 40+ years of learning science with cutting-edge technology.',
     partnership: 'In research partnership with Helsinki Education Hub for validation and testing',
     launchInfo: 'Invite-only launch in December • General public launch in March',
   },
