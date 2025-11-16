@@ -4,6 +4,7 @@ import Header from '../components/layout/Header'
 import Footer from '../components/layout/Footer'
 import SectionWrapper from '../components/layout/SectionWrapper'
 import { waitlistSection } from '../data/content'
+import { registerUser, RegistrationError } from '../services/registrationService'
 
 type Field = {
   label: string
@@ -39,27 +40,21 @@ const RegistrationPage = () => {
     }
 
     try {
-      // TODO: Replace with actual API endpoint when provided
-      // const response = await fetch('API_ENDPOINT_HERE', {
-      //   method: 'POST',
-      //   headers: {
-      //     'Content-Type': 'application/json',
-      //   },
-      //   body: JSON.stringify(data),
-      // })
+      await registerUser(data)
 
-      // if (!response.ok) {
-      //   throw new Error('Failed to submit registration')
-      // }
-
-      // Simulate API call for now
-      await new Promise((resolve) => setTimeout(resolve, 1000))
-
-      // On success, redirect to thank you page
+      // On success (201), redirect to thank you page
       navigate('/thank-you')
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'An error occurred. Please try again.')
-      setLoading(false)
+      // Handle registration errors
+      if (err instanceof RegistrationError) {
+        setError(err.message)
+        // For 409 (email already registered), keep user on form
+        // For other errors, also keep user on form
+        setLoading(false)
+      } else {
+        setError(err instanceof Error ? err.message : 'An error occurred. Please try again.')
+        setLoading(false)
+      }
     }
   }
 
