@@ -30,7 +30,7 @@ const SolutionSection = () => (
       <p className="text-sm uppercase tracking-[0.4em] text-aurora-200">{solutionSection.tagline}</p>
       <p className="mt-4 text-xl text-white md:text-2xl">{solutionSection.formula}</p>
       <div className="mt-6">
-        <Button href="#waitlist">Reserve Your Spot</Button>
+        <Button href="#waitlist">Join Waitlist for March Launch</Button>
       </div>
     </FadeInOnScroll>
   </SectionWrapper>
