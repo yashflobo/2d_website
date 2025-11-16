@@ -31,7 +31,7 @@ const HeroSection = () => (
         </FadeInOnScroll>
         <FadeInOnScroll delay={0.3}>
           <p className="text-sm uppercase tracking-[0.25em] text-aurora-200">
-            {heroContent.tag}
+            {heroContent.stats.launchInfo}
           </p>
         </FadeInOnScroll>
         <FadeInOnScroll delay={0.35}>
@@ -46,7 +46,8 @@ const HeroSection = () => (
       
       <FadeInOnScroll delay={0.4}>
         <div className="mt-12 rounded-3xl border border-white/10 bg-white/[0.03] p-6 backdrop-blur">
-          <p className="text-sm uppercase tracking-[0.3em] text-aurora-200">We are launching soon</p>
+          <p className="text-sm uppercase tracking-[0.3em] text-aurora-200">Invite-only launch in December</p>
+          <p className="mt-2 text-xs text-ink-400">Join waitlist for general public launch in March</p>
           <div className="mt-6 grid grid-cols-2 gap-4 text-center text-white sm:grid-cols-4">
             <div className="rounded-2xl border border-white/10 bg-white/[0.02] px-3 py-4">
               <p className="font-display text-3xl">5</p>

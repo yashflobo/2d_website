@@ -4,7 +4,7 @@ export const navLinks = [
 ] as const
 
 export const heroContent = {
-  tag: 'Launching December 2025',
+  tag: 'Invite only launch in December',
   title: 'Where Curiosity Becomes Mastery',
   subtitle:
     'The first K-12 STEM platform that combines real-world objects, immersive AR, and adaptive AI — transforming abstract concepts into hands-on discoveries that spark lifelong curiosity.',
@@ -12,6 +12,7 @@ export const heroContent = {
     toyDescription: 'Unlocking augmented reality experiences that adapt to your child\'s pace.',
     developer: 'Developed by renowned education researcher Dr. Sudhakar Agarkar',
     experience: 'combining 40+ years of learning science with cutting-edge technology.',
+    launchInfo: 'Invite-only launch in December • General public launch in March',
   },
   metrics: {
     parents: '12,847+ parents',
@@ -22,7 +23,7 @@ export const heroContent = {
     remaining: 'Only 753 founding member spots remaining',
     queue: 'There are 3333 members ahead of you. Want to move up faster?',
   },
-  primaryCta: { label: 'Join the Waitlist for Early Access', href: '#waitlist' },
+  primaryCta: { label: 'Join Waitlist for March Launch', href: '#waitlist' },
   secondaryCta: null,
 } as const
 
@@ -162,14 +163,14 @@ export const socialProofSection = {
 } as const
 
 export const waitlistSection = {
-  title: 'Be among the first to transform STEM learning',
-  subtitle: 'Launching December 2025 — early access opens in 90 days',
+  title: 'Join the waitlist for our General Public Launch',
+  subtitle: 'Launching March 2026 — Secure your spot today',
   benefits: [
-    'Priority access before public launch',
+    'Priority access when we launch publicly in March',
     'Founding member pricing (50% off for first 1,000)',
-    'Exclusive behind-the-scenes updates',
-    'Beta testing opportunity (select members)',
-    'Lifetime discount locked-in',
+    'Exclusive updates and behind-the-scenes content',
+    'Chance for early access (select waitlist members may receive December invite)',
+    'Lifetime discount locked-in at signup',
     '30-day money-back guarantee once launched',
   ],
   parentForm: {
@@ -190,7 +191,11 @@ export const faqs = {
   general: [
     {
       question: 'How do I get it?',
-      answer: "Add your email to the waitlist. We\'ll send you access information and next steps when we launch in December 2025.",
+      answer: "Join our waitlist for the general public launch in March 2026. We're also running an invite-only launch in December 2025—select waitlist members may receive early access invites.",
+    },
+    {
+      question: 'What\'s the difference between the December and March launches?',
+      answer: 'December 2025 is an invite-only launch for a select group of early adopters. March 2026 is our general public launch—join the waitlist to secure priority access and founding member benefits.',
     },
     {
       question: 'Is it safe for my kids?',
