@@ -37,7 +37,9 @@ const HeroSection = () => (
             <p className="text-lg text-white">
               {heroContent.metrics.parents} and {heroContent.metrics.schools} {heroContent.metrics.waitlistText}
             </p>
-            <Button href={heroContent.primaryCta.href}>{heroContent.primaryCta.label}</Button>
+            <Button as="link" to="/register">
+              {heroContent.primaryCta.label}
+            </Button>
           </div>
         </FadeInOnScroll>
       </div>

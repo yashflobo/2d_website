@@ -1,8 +1,11 @@
 import { useState } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 import { navLinks, heroContent } from '../../data/content'
 
 const Header = () => {
   const [open, setOpen] = useState(false)
+  const location = useLocation()
+  const isRegisterPage = location.pathname === '/register'
   const toggle = () => setOpen((prev) => !prev)
 
   return (
@@ -18,20 +21,24 @@ const Header = () => {
           </div>
         </a>
         <nav className="hidden items-center gap-8 text-sm text-ink-200 md:flex">
-          {navLinks.map((link: { label: string; href: string }) => (
-            <a key={link.href} href={link.href} className="transition hover:text-white">
-              {link.label}
-            </a>
-          ))}
+          {navLinks
+            .filter((link: { label: string; href: string }) => !isRegisterPage || link.label !== 'Register')
+            .map((link: { label: string; href: string }) => (
+              <a key={link.href} href={link.href} className="transition hover:text-white">
+                {link.label}
+              </a>
+            ))}
         </nav>
-        <div className="hidden items-center gap-3 md:flex">
-          <a
-            href={heroContent.primaryCta.href}
-            className="rounded-full bg-aurora-500 px-4 py-2 text-sm font-semibold text-ink-950 shadow-glow-sm transition hover:bg-aurora-400"
-          >
-            {heroContent.primaryCta.label}
-          </a>
-        </div>
+        {!isRegisterPage && (
+          <div className="hidden items-center gap-3 md:flex">
+            <Link
+              to="/register"
+              className="rounded-full bg-aurora-500 px-4 py-2 text-sm font-semibold text-ink-950 shadow-glow-sm transition hover:bg-aurora-400"
+            >
+              {heroContent.primaryCta.label}
+            </Link>
+          </div>
+        )}
         <button className="md:hidden text-white" onClick={toggle} aria-label="Toggle navigation">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="h-6 w-6 stroke-current">
             {open ? (
@@ -45,17 +52,21 @@ const Header = () => {
       {open && (
         <div className="border-t border-white/10 bg-ink-900/95 px-6 pb-6 pt-2 md:hidden">
           <nav className="flex flex-col gap-3 text-sm text-ink-100">
-            {navLinks.map((link: { label: string; href: string }) => (
-              <a key={link.href} href={link.href} className="rounded-lg px-3 py-2 transition hover:bg-white/5">
-                {link.label}
+            {navLinks
+              .filter((link: { label: string; href: string }) => !isRegisterPage || link.label !== 'Register')
+              .map((link: { label: string; href: string }) => (
+                <a key={link.href} href={link.href} className="rounded-lg px-3 py-2 transition hover:bg-white/5">
+                  {link.label}
+                </a>
+              ))}
+            {!isRegisterPage && (
+              <a
+                href={heroContent.primaryCta.href}
+                className="rounded-full bg-aurora-500 px-4 py-2 text-center font-semibold text-ink-950"
+              >
+                {heroContent.primaryCta.label}
               </a>
-            ))}
-            <a
-              href={heroContent.primaryCta.href}
-              className="rounded-full bg-aurora-500 px-4 py-2 text-center font-semibold text-ink-950"
-            >
-              {heroContent.primaryCta.label}
-            </a>
+            )}
           </nav>
         </div>
       )}
