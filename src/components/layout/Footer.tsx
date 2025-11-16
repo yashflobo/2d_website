@@ -8,7 +8,7 @@ const Footer = () => (
         <p className="text-xs tracking-widest text-ink-400">© 2025 ARious. All rights reserved.</p>
       </div>
       <nav className="flex flex-wrap gap-4">
-        {navLinks.map((link) => (
+        {(navLinks as unknown as Array<{ href: string; label: string }>).map((link) => (
           <a key={link.href} href={link.href} className="transition hover:text-white">
             {link.label}
           </a>

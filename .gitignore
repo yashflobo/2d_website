@@ -25,3 +25,4 @@ dist-ssr
 .vercel
 updated_WF.pdf
 LAUNCH_TIMELINE_EDITS.md
+.env
