@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
+  "Domain": "arious.ai",
+  "Id": "a754cf6b-4c44-4a8a-b409-4dbe84a3ab9e"
+}
