@@ -1,4 +1,4 @@
-import { type ComponentPropsWithoutRef, type ElementType } from 'react'
+import { type ComponentPropsWithoutRef } from 'react'
 import { Link, type LinkProps } from 'react-router-dom'
 
 type ButtonProps = {

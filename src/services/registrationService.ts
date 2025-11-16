@@ -29,13 +29,18 @@ export type RegistrationResponse = ApiSuccessResponse<Record<string, never>>
 
 // Custom error class for registration errors
 export class RegistrationError extends Error {
+  statusCode: number
+  apiError?: ApiErrorResponse
+
   constructor(
     message: string,
-    public statusCode: number,
-    public apiError?: ApiErrorResponse
+    statusCode: number,
+    apiError?: ApiErrorResponse
   ) {
     super(message)
     this.name = 'RegistrationError'
+    this.statusCode = statusCode
+    this.apiError = apiError
   }
 }
 
