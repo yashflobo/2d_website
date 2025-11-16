@@ -12,9 +12,7 @@ const Header = () => {
     <header className="sticky top-0 z-40 backdrop-blur border-b border-white/10 bg-ink-950/80">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <a href="#hero" className="flex items-center gap-3">
-          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-aurora text-ink-950 font-bold">
-            AR
-          </div>
+          <img src="/logoOnly.png" alt="ARious Logo" className="h-10 w-10" />
           <div>
             <p className="font-display text-lg text-white">ARious</p>
             <p className="text-xs uppercase tracking-[0.3em] text-aurora-200">{heroContent.tag}</p>
