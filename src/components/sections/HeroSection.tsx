@@ -29,6 +29,9 @@ const HeroSection = () => (
             {heroContent.stats.developer}, {heroContent.stats.experience}
           </p>
         </FadeInOnScroll>
+        <FadeInOnScroll delay={0.28}>
+          <p className="text-ink-200">{heroContent.stats.partnership}</p>
+        </FadeInOnScroll>
         <FadeInOnScroll delay={0.3}>
           <p className="text-sm uppercase tracking-[0.25em] text-aurora-200">
             {heroContent.stats.launchInfo}

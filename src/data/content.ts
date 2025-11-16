@@ -12,6 +12,7 @@ export const heroContent = {
     toyDescription: 'Unlocking augmented reality experiences that adapt to your child\'s pace.',
     developer: 'Developed by renowned education researcher Dr. Sudhakar Agarkar',
     experience: 'combining 40+ years of learning science with cutting-edge technology.',
+    partnership: 'In research partnership with Helsinki Education Hub for validation and testing',
     launchInfo: 'Invite-only launch in December • General public launch in March',
   },
   metrics: {
@@ -61,21 +62,21 @@ export const solutionSection = {
     {
       title: 'Physical manipulation',
       tagline: 'Touch creates understanding',
-      body: 'Every CodexAR experience begins with a tangible object—molecular models, geometric manipulatives, engineering components.',
+      body: 'Every ARious experience begins with a tangible object—molecular models, geometric manipulatives, engineering components.',
       stat: 'Research shows physical manipulation improves spatial reasoning by 68% and creates neural pathways that screen-only learning cannot.',
       benefit: 'Expertly designed experiences spanning K-12 mathematics, physics, chemistry, biology, and engineering.',
     },
     {
       title: 'Augmented reality',
       tagline: 'See the invisible, understand the impossible',
-      body: 'Point your device at any CodexAR toy and watch abstract concepts materialize in 3D space. Rotate molecules to understand bonding. Visualize force vectors in real-time. Manipulate geometric transformations with your hands.',
+      body: 'Point your device at any ARious toy and watch abstract concepts materialize in 3D space. Rotate molecules to understand bonding. Visualize force vectors in real-time. Manipulate geometric transformations with your hands.',
       stat: 'AR makes the invisible visible, transforming imagination into interaction.',
       benefit: 'Not passive watching—active problem-solving through spatial interaction.',
     },
     {
       title: 'Adaptive AI',
       tagline: 'Learning that knows your child',
-      body: 'Our AI doesn\'t just deliver content—it understands how each learner thinks. CodexAR adapts difficulty in real-time, identifies misconceptions, suggests alternative approaches, and celebrates progress.',
+      body: 'Our AI doesn\'t just deliver content—it understands how each learner thinks. ARious adapts difficulty in real-time, identifies misconceptions, suggests alternative approaches, and celebrates progress.',
       stat: 'Every child moves at their own pace, building genuine mastery instead of just moving forward.',
       benefit: 'From struggling to confident—AI ensures every child succeeds.',
     },
@@ -106,9 +107,20 @@ export const researchSection = {
   subtitle: 'Dr. Sudhakar Agarkar',
   tagline: 'Four decades transforming education',
   mission: 'On a mission to fuel every student\'s curiosity and empower teachers with tools to make it happen.',
+  partnership: {
+    eyebrow: 'Global research partners',
+    title: 'Validated with Helsinki Education Hub',
+    summary:
+      'ARious was selected by Helsinki Education Hub as a research partner to bring Dr. Agarkar\'s Remedial Instructional Strategy to the Nordic innovation ecosystem.',
+    bullets: [
+      'Collaborative pilot design inside Helsinki Education Hub\'s testing platform',
+      'Evidence gathering with Finnish educators to benchmark against Nordic pedagogy standards',
+      'Independent validation of ARious learning outcomes prior to the March public launch',
+    ],
+  },
   bio: {
     name: 'Dr. Sudhakar Agarkar',
-    title: 'Chief Knowledge Officer at CodexAR and Professor Emeritus at the Tata Institute of Fundamental Research (TIFR)',
+    title: 'Chief Knowledge Officer at ARious and Professor Emeritus at the Tata Institute of Fundamental Research (TIFR)',
     intro: 'one of India\'s most prestigious research institutions.',
     summary:
       'For over 40 years, he\'s dedicated his career to a singular mission: Making STEM education accessible and effective for every student, regardless of background.',
@@ -142,7 +154,19 @@ export const socialProofSection = {
     { label: 'schools', value: '245', subtext: 'requesting pilots' },
     { label: 'countries', value: '19', subtext: 'expressing interest' },
   ],
-  badges: ['COPPA Compliant', 'FERPA Certified', 'STEM.org Accredited', 'Privacy Certified', 'Research-Backed'],
+  badges: [
+    'COPPA Compliant',
+    'FERPA Certified',
+    'STEM.org Accredited',
+    'Privacy Certified',
+    'Research-Backed',
+    'Validated by Helsinki Education Hub',
+  ],
+  partnership: {
+    title: 'Research partner: Helsinki Education Hub',
+    description:
+      'Our RIS-powered experiences are being tested and validated through Helsinki Education Hub\'s startup collaboration program, ensuring ARious meets rigorous European standards.',
+  },
   testimonials: [
     {
       role: 'Teacher',
@@ -152,12 +176,12 @@ export const socialProofSection = {
     {
       role: 'Principal',
       quote:
-        'We evaluated 14 STEM platforms. CodexAR was the only one combining research backing, standards alignment, and genuine student engagement. Easy choice.',
+        'We evaluated 14 STEM platforms. ARious was the only one combining research backing, standards alignment, and genuine student engagement. Easy choice.',
     },
     {
       role: 'Parent',
       quote:
-        'I researched everything before committing. Dr. Agarkar\'s credentials and the Helsinki partnership convinced me this isn\'t just another edtech fad — it\'s the real deal.',
+        'I researched everything before committing. The Helsinki Education Hub partnership means ARious has been vetted by Europe\'s leading education incubator — this isn\'t just another edtech fad.',
     },
   ],
 } as const
@@ -208,11 +232,11 @@ export const faqs = {
     },
     {
       question: 'What age group is appropriate?',
-      answer: "CodexAR spans K-12 (ages 5-18) with age-appropriate content for each grade level. We\'ll ask about your child\'s grade when you join the waitlist.",
+      answer: "ARious spans K-12 (ages 5-18) with age-appropriate content for each grade level. We\'ll ask about your child\'s grade when you join the waitlist.",
     },
     {
       question: 'Are you certified?',
-      answer: 'Yes. CodexAR is backed by renowned learning science research and aligns with COPPA/FERPA guidelines. We hold STEM.org accreditation and maintain privacy certifications.',
+      answer: 'Yes. ARious is backed by renowned learning science research and aligns with COPPA/FERPA guidelines. We hold STEM.org accreditation and maintain privacy certifications.',
     },
     {
       question: 'Can I try this for Free?',

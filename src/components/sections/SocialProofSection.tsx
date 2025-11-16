@@ -26,6 +26,12 @@ const SocialProofSection = () => (
             </span>
           ))}
         </div>
+        <div className="mt-6 rounded-2xl border border-white/10 bg-white/[0.04] p-5">
+          <p className="text-sm uppercase tracking-[0.2em] text-aurora-200">
+            {socialProofSection.partnership.title}
+          </p>
+          <p className="mt-2 text-sm text-ink-200">{socialProofSection.partnership.description}</p>
+        </div>
       </div>
       <div className="space-y-4">
         {socialProofSection.testimonials.map((testimonial) => (
