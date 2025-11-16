@@ -31,6 +31,21 @@ const ResearchSection = () => (
         </FadeInOnScroll>
 
         <div className="space-y-6">
+          <FadeInOnScroll className="rounded-3xl border border-white/10 bg-white/[0.02] p-6" y={36}>
+            <p className="text-xs uppercase tracking-[0.3em] text-aurora-200">
+              {researchSection.partnership.eyebrow}
+            </p>
+            <h4 className="mt-3 font-display text-xl text-white">{researchSection.partnership.title}</h4>
+            <p className="mt-3 text-ink-200">{researchSection.partnership.summary}</p>
+            <ul className="mt-4 space-y-3 text-ink-100">
+              {researchSection.partnership.bullets.map((bullet) => (
+                <li key={bullet} className="flex items-start gap-3">
+                  <span className="mt-1 h-2 w-2 rounded-full bg-aurora-300 flex-shrink-0" />
+                  {bullet}
+                </li>
+              ))}
+            </ul>
+          </FadeInOnScroll>
           <FadeInOnScroll className="rounded-3xl border border-white/10 bg-white/[0.02] p-6" y={40}>
             <h4 className="font-display text-xl text-white">{researchSection.bio.hurdlesTitle}</h4>
             <div className="mt-4 space-y-3">
