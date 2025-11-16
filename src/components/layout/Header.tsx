@@ -21,6 +21,11 @@ const Header = () => {
           </div>
         </a>
         <nav className="hidden items-center gap-8 text-sm text-ink-200 md:flex">
+          {isRegisterPage && (
+            <Link to="/preview" className="transition hover:text-white">
+              Home
+            </Link>
+          )}
           {navLinks
             .filter((link: { label: string; href: string }) => !isRegisterPage || link.label !== 'Register')
             .map((link: { label: string; href: string }) => (
@@ -52,6 +57,11 @@ const Header = () => {
       {open && (
         <div className="border-t border-white/10 bg-ink-900/95 px-6 pb-6 pt-2 md:hidden">
           <nav className="flex flex-col gap-3 text-sm text-ink-100">
+            {isRegisterPage && (
+              <Link to="/preview" className="rounded-lg px-3 py-2 transition hover:bg-white/5">
+                Home
+              </Link>
+            )}
             {navLinks
               .filter((link: { label: string; href: string }) => !isRegisterPage || link.label !== 'Register')
               .map((link: { label: string; href: string }) => (

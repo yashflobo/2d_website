@@ -1,7 +1,4 @@
-export const navLinks = [
-  { label: 'Home', href: '#hero' },
-  { label: 'Register', href: '#waitlist' },
-] as const
+export const navLinks = [] as const
 
 export const heroContent = {
   tag: 'Invite only launch in December',
